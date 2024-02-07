@@ -1,7 +1,9 @@
 /*HOME STYLE*/
 /*header*/
-header {
-    display: block;
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
 
 }
 
@@ -9,24 +11,98 @@ header {
     display: flex;
     flex-direction: row;
     align-items: right;
-    margin: 20px 5px;
-    padding: 10px 5px;
+
+    /*cabeçalho fixo*/
+    position: fixed;
+    top: -16px;
+    left: 0;
+    right: 0;
+    height: 55px;
+
+    /*conf cabeçalho não transparente*/
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(205, 205, 205);
+
+    /*para que o body não sobreponha cabeçalho*/
+    z-index: 100;
     justify-content: end;
     list-style: none;
 }
 
 nav ul li a {
+    display: flex;
+    flex-direction: row;
     font-family: Roboto, Arial;
     font-size: 20px;
     text-decoration: none;
-    width: 100px;
+    width: 100%;
+    align-items: center;
     color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding-right: 35px;
     font-weight: bold;
 }
 
 
-img {
-    width: 180px;
-    border-radius: 30px;
+.img-profile {
+    width: 100%;
+    border-radius: 500px;
+
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 150px;
+    row-gap: 20px;
+    margin: 20px 150px 20px 300px; /*top, right, botton, left*/
+    vertical-align: top;
+}
+
+.text-style {
+    display: flex;
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 150px;
+    justify-content: center;
+}
+
+.text-style2 {
+    display: flex;
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.right-section {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    padding-right: 35px;
+    font-weight: bold;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-contact {
+    width: 40px;
 }

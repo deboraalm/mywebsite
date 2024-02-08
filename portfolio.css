@@ -46,6 +46,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/*body*/
 
 .img-profile {
     width: 100%;
@@ -80,11 +81,14 @@ nav ul li a {
 
 }
 
+/*footer*/
+
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
+    margin: 10px;
 }
 
 .right-section {
@@ -93,6 +97,7 @@ nav ul li a {
     text-decoration: none;
     width: 100%;
     color: black;
+    padding-top: 10px;
     padding-right: 35px;
     font-weight: bold;
 }
@@ -100,9 +105,19 @@ nav ul li a {
 .left-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: end;
 }
 
 .img-contact {
     width: 40px;
+    padding: 5px;
+}
+
+/*ABOUT ME*/
+
+/*PORTFOLIO*/
+
+.img-port {
+    width: 500px;
+    padding: 15px;
 }

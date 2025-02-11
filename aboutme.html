@@ -6,23 +6,24 @@
         <link rel="stylesheet" href="aboutme.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+
     </head>
 
-    <nav>
-        <ul class="navegation">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul> 
-    </nav>
-
     <body>
+        <nav>
+            <ul class="navegation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> 
+        </nav>
+
         <main>
             <section class="main-grid-about">
                     <div>
-                        <div><img class="img-profile-about" src="imagens/debora.jpg"></div>
+                        <figure><img class="img-profile-about" src="imagens/debora.jpg" alt="Photo of Débora Almeida"></figure>
                     </div>
 
                     <div class="description-style">
@@ -38,29 +39,32 @@
                             watch?v=SBmSRK3feww&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&index=3&ab_channel=SuperSimpleDev">JavaScript</a> and React. 
                             (colocar links do curso nessas palavras)</p>
 
-                            <p class="text-style-about">Going deep in my knowledge with <a class="link-style" href="https://see.stanford.edu/course">Stanford Computer Science Course</a>. And right now my skills is:
+                            <p class="text-style-about">Going deep in my knowledge with <a class="link-style" href="https://see.stanford.edu/course">Stanford Computer Science Course</a>. And right now my skills are:</p>
+                            
                             <ul class="text-style-about">
                                 <li>HTML & CSS</li>
                                 <li>JavaScript</li>
-                                <li>React</li>
+                                <li>React 19</li>
                             </ul>
-                            </p></div>
+                        </div>
                     </div>                              
             </section>
         </main>
 
+     <script src="portfolio.js"></script>
+
     </body>
 
-    <script src="portfolio.js"></script>
+    
 
     <footer>
         <div class="footer-grid">
             <div class="right-section">Created by Débora Almeida. &copy;</div>
 
             <div class="left-section">
-                <img class="img-contact" src="imagens/linkedin.png">
-                <img class="img-contact" src="imagens/email.png">
-                <img class="img-contact" src="imagens/github.png">
+                <img class="img-contact" src="imagens/linkedin.png" alt="Linkedin">
+                <img class="img-contact" src="imagens/email.png" alt="Email">
+                <img class="img-contact" src="imagens/github.png" alt="GitHub">
             </div>
 
         </div>
